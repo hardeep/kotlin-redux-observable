@@ -1,6 +1,8 @@
 # Redux Observable for Kotlin
 
-## RxJava2 middleware for action side effects in Redux using "Epics"
+[![Release](https://jitpack.io/v/hardeep/kotlin-redux-observable.svg)](https://jitpack.io/#hardeep/kotlin-redux-observable)
+
+> RxJava2 middleware for action side effects in Redux using "Epics"
 
 ## Example usage
 
