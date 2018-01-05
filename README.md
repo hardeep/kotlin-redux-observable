@@ -56,7 +56,7 @@
             return { action, store, dependencies ->
                 action.ofActionType(TestAction())
                         .map({ _ ->
-                            store.dispatch(Action(EffectTestAction()))
+                            Action(EffectTestAction())
                         })
             }
         } 
@@ -77,4 +77,4 @@
         println(store.getState())
     }
 
-    // Result: ApplicationState(strings=[Adding first string, Adding effect string, Adding effect string, Adding another string])
+    // Result: ApplicationState(strings=[Adding first string, Adding effect string, Adding another string])

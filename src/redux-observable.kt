@@ -37,14 +37,9 @@ fun <S> createEpicMiddleware(rootEpic: MergedEpics<S>, dependencies: Any?): Midd
 
     return { store ->
         val next: (Next) -> (Action) -> Action = { next ->
-            println("Executing rootEpic")
             epicObservable.switchMap { e ->
-                println("Building rootEpic")
-                val i = e(actionObservable, store, dependencies)
-                println(i::class.java)
-                i
+                e(actionObservable, store, dependencies)
             }.subscribe({ action ->
-                println("dispatching ${action.type}")
                 try {
                     store.dispatch(action)
                 } catch (e: Error) {
