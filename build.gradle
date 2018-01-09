@@ -22,7 +22,7 @@ sourceSets {
 dependencies {
     compile "org.jetbrains.kotlin:kotlin-stdlib-jdk8:$kotlin_version"
     compile group: 'io.reactivex.rxjava2', name: 'rxkotlin', version: '2.2.0'
-    compile 'com.github.hardeep:kotlin-redux:v1.0.0'
+    compile 'com.github.hardeep:kotlin-redux:v1.0.2'
 }
 
 buildscript {
