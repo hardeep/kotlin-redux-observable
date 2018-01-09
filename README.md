@@ -1,6 +1,7 @@
 # Redux Observable for Kotlin
 
 [![Release](https://jitpack.io/v/hardeep/kotlin-redux-observable.svg)](https://jitpack.io/#hardeep/kotlin-redux-observable)
+[![Known Vulnerabilities](https://snyk.io/test/github/hardeep/kotlin-redux-observable/badge.svg)](https://snyk.io/test/github/hardeep/kotlin-redux-observable)
 
 > RxJava2 middleware for action side effects in Redux using "Epics"
 
